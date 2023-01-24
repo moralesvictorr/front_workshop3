@@ -12,7 +12,7 @@ const Form = () => {
       <input placeholder='Password' type="password" required {...register("password")} />
       <button type='submit' className='boton'>CLAIM YOUR FREE TRIAL</button>
 
-      <p id="terminos1">By clicking the button you are agreeing to our <strong id="terminos2">Terms and Services</strong>
+      <p id="terminos1">By clicking the button you are agreeing to our <strong id="terminos2">Terms and Services</strong></p>
     </form>
   )
 }
