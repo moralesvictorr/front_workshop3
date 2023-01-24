@@ -3,16 +3,22 @@ import Form from './Containers/Form';
 import BannerPromo from './Components/BannerPromo';
 import Description from './Components/Description';
 import ButtonPromo from './Components/ButtonPromo';
+import './Styles/app.scss'
+
+
 
 
 function App() {
   return (
     <>
-     <Form />
-     <BannerPromo />
-     <Description />
-     <ButtonPromo />
+
+    <Form />
+    <Description />
+    <BannerPromo />
+    <ButtonPromo />
+
     </>
+
   );
 }
 
