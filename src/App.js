@@ -2,11 +2,8 @@ import logo from './logo.svg';
 import Form from './Containers/Form';
 import BannerPromo from './Components/BannerPromo';
 import Description from './Components/Description';
-import ButtonPromo from './Components/ButtonPromo';
-import './Styles/app.scss'
-
-
-
+import BannerPromo from './Components/BannerPromo';
+import "./Styles/app.scss"
 
 function App() {
   return (
@@ -16,7 +13,6 @@ function App() {
     <Description />
     <BannerPromo />
     <ButtonPromo />
-
     </>
 
   );
