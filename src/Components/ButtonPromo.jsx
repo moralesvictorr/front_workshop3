@@ -2,7 +2,7 @@ import React from 'react'
 
 const ButtonPromo = () => {
   return (
-    <div>ButtonPromo</div>
+    <div><button>CLAIM YOUR FREE TRIAL</button></div>
   )
 }
 
