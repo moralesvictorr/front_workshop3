@@ -1,7 +1,34 @@
 #terminos1{
+    background-color: white;
     font-size: 10px;
     color: gray;
 }
 #terminos2{
+    background-color: white;
     color: rgb(255, 0, 0);
+}
+.container{
+    background-color: white;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.inputs{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    width: 95%;
+    height: 50px;
+}
+.boton{
+    background: rgba(58, 203, 139, 0.934);
+    color: white;
+    font-size: 10px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
 }

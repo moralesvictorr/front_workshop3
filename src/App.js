@@ -10,10 +10,15 @@ import "./Styles/form.scss"
 function App() {
   return (
     <>
+      <div className='principal-container'>
+        <Description />
 
-    <Description />
-    <Form />
-    <BannerPromo />
+        <div className='section-container'>
+          <BannerPromo />
+          <Form />
+        </div>
+
+      </div>
     </>
 
   );
