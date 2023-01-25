@@ -1,4 +1,4 @@
-*{
+body{
     background: url(https://github.com/moralesvictorr/front_workshop3/blob/main/src/Imgs/bg-intro-desktop.png?raw=true);
     background-color:  rgba(255, 120, 121, 0.934);
     font-family: 'Poppins', sans-serif;
@@ -6,4 +6,18 @@
 .principal-container{
     display: flex;
     flex-direction: row;
+    padding: 20px;
+    gap: 50px;
+
+}
+.description-container{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-container{
+    width: 50%;
+    justify-content: center;
 }

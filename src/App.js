@@ -12,7 +12,9 @@ function App() {
   return (
     <>
       <div className='principal-container'>
+        <div className='description-container'>
         <Description />
+        </div>
 
         <div className='section-container'>
           <BannerPromo />

@@ -7,8 +7,21 @@ const Form = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className='container'>
-      
-        <input className='inputs' placeholder='First Name' required {...register("firstName")} />
+      {/* <input
+    
+    id="accountReference"
+    
+    className={
+        errors?.accountReference?.message ? styles["error"] : "no-error"
+    }
+    
+    {...register("accountReference", {
+    
+        required: "Account reference is required",
+    
+    })} 
+  /> */}
+        <input className='inputs' placeholder='First Name' {...register("firstName", { required: "firstname cannot be empty" })} />
         <input className='inputs'placeholder='Last Name' required {...register("lastName")} />
         <input className='inputs'placeholder='Email Address' type="email" required {...register("email")} />
         <input className='inputs'placeholder='Password' type="password" required {...register("password")} />
