@@ -21,3 +21,20 @@ body{
     width: 50%;
     justify-content: center;
 }
+
+@media (max-width: 500px){
+    .principal-container{
+        flex-direction: column;
+        place-items: center;
+        gap: 0px;
+    }
+    .description-container{
+        width: 100%;
+        justify-content: center;
+
+    }
+    .section-container{
+        width: 100%;
+        justify-content: center;
+    }
+}

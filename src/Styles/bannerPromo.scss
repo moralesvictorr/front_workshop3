@@ -16,3 +16,16 @@
     cursor: pointer;
 }
     
+@media (max-width: 1052px){
+    .blue{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px){
+    .blue{
+        font-size: 10px;
+        width: 80%;
+        margin-left: 10px;
+    }
+}

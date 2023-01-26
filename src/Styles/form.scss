@@ -6,7 +6,7 @@
 
 #terminos2 {
     background-color: white;
-    color: rgb(255, 0, 0);
+    color: rgb(241, 82, 82);
 }
 
 #terminos2:hover {
@@ -33,6 +33,16 @@
     height: 40px;
     padding-inline-start: 15px;
 }
+
+/* .inputs:focus{
+    border-color: purple;
+} */
+
+.invalid:focus{
+        outline:1.5px solid  rgb(255, 120, 120);
+    
+}
+
 
 .boton {
     background: rgba(58, 203, 139, 0.934);
@@ -68,15 +78,73 @@
 }
 
 .invalid {
-    border: 1px solid #ff0000
+    border: 1px solid rgb(255, 120, 120);
 }
+
+.error-container{
+    position: relative;
+    display: flex;
+    width: 70%;
+}
+
 .error-color{
-    margin-left: 250px;
-    color: #ff0000;
+    /* margin-left: 250px; */
+    color: rgb(242, 76, 76);
     font-size: 12px;
+    position: absolute;
+    right: -50px;
+    top: -10px;
+   
 }
-.error{
-    margin-left: 130px;
-    color: #ff0000;
-    font-size: 12px;
+
+@media (max-width: 865px){
+    .container{
+        width: 75%;
+    }
+    .error-color{
+        font-size: 10px;
+        right: -40px;
+        top: -7px;
+    }
+}
+@media (max-width: 745px){
+    .container{
+        width: 78%;
+    }
+    .error-color{
+        font-size: 9.3px;
+        right: -10px;
+        top: -7px;
+    }
+    .error-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .container{
+        margin-top: 20px;
+        place-items: center;
+        width: 80%;
+        margin-left: 10px;
+    }
+    .registros{
+        margin-left: 10px;
+        width: 80%;
+        h1 {
+            font-size: 18px;
+        }
+    
+        li {
+            font-size: 12px;
+        }
+    }
+
+}
+@media (max-width: 375px){
+    .error-color{
+        font-size: 9.1px;
+        right: -2px;
+        top: -7px;
+    }
 }
