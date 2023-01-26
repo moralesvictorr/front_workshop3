@@ -4,6 +4,7 @@ import { set, useForm } from 'react-hook-form'
 const Form = () => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const [entradas, setEntradas] = useState([]);
+
   const procesarForm = (data, e) => {
     console.log(data);
     setEntradas([
@@ -28,7 +29,7 @@ const Form = () => {
 
         <input className='inputs'  placeholder='Password' type="password" {...register("password", { required:true, pattern:/^(?=(?:.*\d))(?=.*[A-Z])(?=.*[a-z])(?=.*[.,*!?¿¡/#$%&+-_=<>;:])\S{8,64}$/})} />
         {errors.password && <small role="alert">Password is required and must be more safe</small>}
-        
+
         <button type='submit' className='boton'>CLAIM YOUR FREE TRIAL</button>
 
         <p id="terminos1">By clicking the button you are agreeing to our <strong id="terminos2">Terms and Services</strong></p>
