@@ -42,9 +42,18 @@
     cursor: pointer;
 }
 .registros{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 5px;
     color:  hsl(248, 32%, 49%);
-    font-size: 13px;
-    width: 70%;
+    width: 70%; 
+    place-items: center;
+    padding-bottom: 10px;
+    h1{
+        font-size: 25px;
+    }
+    li{
+        font-size: 15px;
+    }
 }

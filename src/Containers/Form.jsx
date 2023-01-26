@@ -18,10 +18,17 @@ const Form = () => {
       <div className='container'>
 
         <input className='inputs'  placeholder='First Name' {...register("firstName", { required:true})} />
-        {errors.firstName?.type === 'required' && <span role="alert">First name is required</span>}
-        <input className='inputs'  placeholder='Last Name' required {...register("lastName")} />
-        <input className='inputs'  placeholder='Email Address' type="email" required {...register("email")}  />
-        <input className='inputs'  placeholder='Password' type="password" required {...register("password")} />
+        {errors.firstName?.type === 'required' && <small role="alert">First name is required</small>}
+
+        <input className='inputs'  placeholder='Last Name' {...register("lastName", { required:true})} />
+        {errors.lastName?.type === 'required' && <small role="alert">Last name is required</small>}
+
+        <input className='inputs'  placeholder='Email Address' type="email" {...register("email", { required:"Email Address is required"})} aria-invalid={errors.email ? "true" : "false"}   />
+        {errors.email && <small role="alert">{errors.email?.message}</small>}
+
+        <input className='inputs'  placeholder='Password' type="password" {...register("password", { required:true, pattern:/^(?=(?:.*\d))(?=.*[A-Z])(?=.*[a-z])(?=.*[.,*!?¿¡/#$%&+-_=<>;:])\S{8,64}$/})} />
+        {errors.password && <small role="alert">Password is required and must be more safe</small>}
+        
         <button type='submit' className='boton'>CLAIM YOUR FREE TRIAL</button>
 
         <p id="terminos1">By clicking the button you are agreeing to our <strong id="terminos2">Terms and Services</strong></p>
